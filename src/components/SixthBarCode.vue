@@ -130,6 +130,7 @@
   .video-container {
     position: relative;
     width: 100%;
+    max-width: 600px;
     aspect-ratio: 16/9;
     overflow: hidden;
     border-radius: 10px;
@@ -172,5 +173,12 @@
     font-size: 18px;
     font-weight: 500;
   }
+
+  @media screen and (max-width: 600px) {
+  .video-container {
+    width: 100%; /* Ensure it doesn't exceed the screen width */
+    height: auto;
+  }
+}
   </style>
   
